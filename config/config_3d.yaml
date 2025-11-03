@@ -1,0 +1,20 @@
+llm:
+  type: gemini
+  models:
+    openrouter: Null
+    openai: Null
+    anthropic: Null
+    gemini: "gemini-2.5-flash"
+  api_keys:
+    openrouter: ""
+    openai: ""
+    anthropic: ""
+    gemini: ""
+  temperature: 0.7
+  top_p: 0.4
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}.json"
+

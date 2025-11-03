@@ -1,0 +1,366 @@
+{
+  "run_id": "20251103_214041",
+  "llm_name": "OpenRouter(gemini-2.5-flash)",
+  "n_samples": 10,
+  "n_queries_per_sample": null,
+  "query_multiplier": 1.0,
+  "seed": 33550336,
+  "timestamp": "2025-11-03T23:26:15.580279",
+  "results": [
+    {
+      "observation_set_id": "n3_inputs_00_10_11_outputs_111",
+      "n_observations": 3,
+      "n_ground_truths": 6,
+      "n_queries": 6,
+      "n_valid": 3,
+      "n_unique_valid": 3,
+      "n_unique_all": 3,
+      "n_recovered_gts": 2,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5,
+      "valid_rate": 0.5,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.3333333333333333,
+      "all_hypotheses": [
+        "NOT y OR (x AND y)",
+        "x OR NOT y",
+        "(NOT x AND NOT y) OR x",
+        "NOT (NOT x AND y)",
+        "x OR NOT y OR (x AND y)",
+        "(NOT x AND NOT y) OR (x AND NOT y) OR (x AND y)"
+      ],
+      "valid_hypotheses": [
+        "NOT y OR (x AND y)",
+        "x OR NOT y",
+        "x OR NOT y OR (x AND y)"
+      ],
+      "unique_valid_expressions": [
+        "NOT y OR (x AND y)",
+        "x OR NOT y",
+        "x OR NOT y OR (x AND y)"
+      ],
+      "unique_all_expressions": [
+        "NOT y OR (x AND y)",
+        "x OR NOT y",
+        "x OR NOT y OR (x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3244,
+        "completion_tokens": 70,
+        "total_tokens": 38792
+      },
+      "cost": 0.003314,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {
+          "connection_error": 1
+        }
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0010",
+      "n_observations": 4,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5,
+      "valid_rate": 0.5,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.5,
+      "all_hypotheses": [
+        "x AND NOT y",
+        "Error parsing OpenRouter response: 'content"
+      ],
+      "valid_hypotheses": [
+        "x AND NOT y"
+      ],
+      "unique_valid_expressions": [
+        "x AND NOT y"
+      ],
+      "unique_all_expressions": [
+        "x AND NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 530,
+        "completion_tokens": 6,
+        "total_tokens": 2177
+      },
+      "cost": 0.000536,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_10_11_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 9,
+      "n_queries": 9,
+      "n_valid": 5,
+      "n_unique_valid": 4,
+      "n_unique_all": 4,
+      "n_recovered_gts": 4,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5555555555555556,
+      "valid_rate": 0.5555555555555556,
+      "novelty_rate": 0.4444444444444444,
+      "recovery_rate": 0.4444444444444444,
+      "all_hypotheses": [
+        "NOT x",
+        "NOT (x OR y)",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x OR (NOT x AND y)",
+        "NOT x AND (x OR y)",
+        "NOT x OR NOT (x OR y)",
+        "NOT x",
+        "NOT (x OR NOT y)"
+      ],
+      "valid_hypotheses": [
+        "NOT x",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x AND (x OR y)",
+        "NOT x"
+      ],
+      "unique_valid_expressions": [
+        "NOT x",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x AND (x OR y)"
+      ],
+      "unique_all_expressions": [
+        "NOT x",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x AND (x OR y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 4815,
+        "completion_tokens": 70,
+        "total_tokens": 43452
+      },
+      "cost": 0.004885,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {
+          "connection_error": 1
+        }
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_10_11_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 8,
+      "n_queries": 8,
+      "n_valid": 8,
+      "n_unique_valid": 8,
+      "n_unique_all": 8,
+      "n_recovered_gts": 8,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "all_hypotheses": [
+        "y",
+        "x AND y",
+        "NOT x OR y",
+        "NOT (NOT y)",
+        "(x AND y) OR y",
+        "NOT x OR (x AND y)",
+        "(x OR y) AND y",
+        "(x OR y) AND (x AND y)"
+      ],
+      "valid_hypotheses": [
+        "y",
+        "x AND y",
+        "NOT x OR y",
+        "NOT (NOT y)",
+        "(x AND y) OR y",
+        "NOT x OR (x AND y)",
+        "(x OR y) AND y",
+        "(x OR y) AND (x AND y)"
+      ],
+      "unique_valid_expressions": [
+        "y",
+        "x AND y",
+        "NOT x OR y",
+        "NOT (NOT y)",
+        "(x AND y) OR y",
+        "NOT x OR (x AND y)",
+        "(x OR y) AND y",
+        "(x OR y) AND (x AND y)"
+      ],
+      "unique_all_expressions": [
+        "y",
+        "x AND y",
+        "NOT x OR y",
+        "NOT (NOT y)",
+        "(x AND y) OR y",
+        "NOT x OR (x AND y)",
+        "(x OR y) AND y",
+        "(x OR y) AND (x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 4211,
+        "completion_tokens": 62,
+        "total_tokens": 48561
+      },
+      "cost": 0.004273,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_01_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 8,
+      "n_queries": 8,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 0.125,
+      "in_space_rate": 0.125,
+      "valid_rate": 0.125,
+      "novelty_rate": 0.125,
+      "recovery_rate": 0.125,
+      "all_hypotheses": [
+        "y",
+        "[ERROR after 5 attempts] Type: timeout | Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D421A50>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+        "[ERROR after 5 attempts] Type: timeout | Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D5658A0>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+        "[ERROR after 5 attempts] Type: timeout | Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D564370>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+        "[ERROR after 5 attempts] Type: timeout | Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D566410>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+        "[ERROR after 5 attempts] Type: timeout | Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D566710>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+        "[ERROR after 5 attempts] Type: timeout | Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D566290>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+        "[ERROR after 5 attempts] Type: timeout | Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D423460>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))"
+      ],
+      "valid_hypotheses": [
+        "y"
+      ],
+      "unique_valid_expressions": [
+        "y"
+      ],
+      "unique_all_expressions": [
+        "y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 3,
+        "total_tokens": 2227
+      },
+      "cost": 0.000507,
+      "errors": [
+        {
+          "query_index": 1,
+          "attempt": 5,
+          "error_message": "Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D421A50>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+          "error_type": "timeout"
+        },
+        {
+          "query_index": 2,
+          "attempt": 5,
+          "error_message": "Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D5658A0>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+          "error_type": "timeout"
+        },
+        {
+          "query_index": 3,
+          "attempt": 5,
+          "error_message": "Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D564370>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+          "error_type": "timeout"
+        },
+        {
+          "query_index": 4,
+          "attempt": 5,
+          "error_message": "Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D566410>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+          "error_type": "timeout"
+        },
+        {
+          "query_index": 5,
+          "attempt": 5,
+          "error_message": "Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D566710>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+          "error_type": "timeout"
+        },
+        {
+          "query_index": 6,
+          "attempt": 5,
+          "error_message": "Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D566290>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+          "error_type": "timeout"
+        },
+        {
+          "query_index": 7,
+          "attempt": 5,
+          "error_message": "Error querying OpenRouter: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/openai/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002980D423460>, 'Connection to generativelanguage.googleapis.com timed out. (connect timeout=None)'))",
+          "error_type": "timeout"
+        }
+      ],
+      "error_summary": {
+        "total_errors": 7,
+        "error_types": {
+          "connection_error": 1,
+          "timeout": 34
+        }
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0100",
+      "n_observations": 4,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5,
+      "valid_rate": 0.5,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.5,
+      "all_hypotheses": [
+        "(NOT x) AND y",
+        "NOT (x OR NOT y)"
+      ],
+      "valid_hypotheses": [
+        "(NOT x) AND y"
+      ],
+      "unique_valid_expressions": [
+        "(NOT x) AND y"
+      ],
+      "unique_all_expressions": [
+        "(NOT x) AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1067,
+        "completion_tokens": 17,
+        "total_tokens": 4019
+      },
+      "cost": 0.001084,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    }
+  ],
+  "total_token_usage": {
+    "prompt_tokens": 14371,
+    "completion_tokens": 228,
+    "total_tokens": 139228
+  },
+  "total_cost": 0.014598999999999999,
+  "total_errors": 7,
+  "error_types": {
+    "connection_error": 1,
+    "timeout": 34
+  }
+}
