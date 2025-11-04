@@ -163,6 +163,7 @@ python src/generate_dataset/3d_dataset.py `
 
 ```bash
 python src/generate_dataset/boolean_dataset.py `
+  --operators basic `
   --max-depth 2  `
   --seed 33550336 `
   --output  'datasets/boolean_2var.json' `
