@@ -993,7 +993,7 @@ def setup_llm(llm_type: str, **kwargs) -> LLMInterface:
             model=kwargs.get('model', 'gemini-2.5-flash'),
             api_key=kwargs.get('api_key'),
             temperature=kwargs.get('temperature', 0.4),
-            top_p=kwargs.get('top_p', 0.8)
+            top_p=kwargs.get('top_p', 0.5)
         )
 
     else:
