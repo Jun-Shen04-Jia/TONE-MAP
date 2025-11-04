@@ -11,9 +11,10 @@ llm:
     anthropic: ""
     gemini: ""
   temperature: 0.4
-  top_p: 0.8
+  top_p: 0.5
 
 benchmark:
   checkpoint: "checkpoints"
   verbose: true
   output_pattern: "results/{dataset_name}_{model}.json"
+
